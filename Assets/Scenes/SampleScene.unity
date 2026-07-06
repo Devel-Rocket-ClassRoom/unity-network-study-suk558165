@@ -620,11 +620,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1242397313}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b326b3eddf41ab24f87cb872c74cc760, type: 3}
+  m_Script: {fileID: 11500000, guid: 5e5ec511f4fe8e947b6e7a5ca124ce4e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RelayBootstrap
-  m_MaxConnections: 4
-  m_ConnectionType: dtls
+  m_EditorClassIdentifier: Assembly-CSharp::SessionManager
+  m_MaxPlayer: 4
+  m_GuiTopOffset: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
