@@ -1,6 +1,7 @@
 using Unity.Collections;
 using Unity.Netcode;
 using UnityEngine;
+using static NetworkStudy.Gameplay.CoinArenaManager;
 
 public class ScoreBoard : NetworkBehaviour
 {
@@ -30,13 +31,13 @@ public class ScoreBoard : NetworkBehaviour
     {
         for (int i = 0; i < entries.Count; i++)
         {
-            if (entries[i].ClientID == clientId)
+            if (entries[i].ClientId == clientId)
                 return;
         }
 
         var entry = new ScoreEntry
         {
-            ClientID = clientId,
+            ClientId = clientId,
             Name = new FixedString32Bytes($"Player {clientId}"),
             Score = 0,
         };
@@ -54,7 +55,7 @@ public class ScoreBoard : NetworkBehaviour
     {
         for (int i = 0; i < entries.Count; i++)
         {
-            Debug.Log($"{entries[i].ClientID} / {entries[i].Name} / {entries[i].Score}");
+            Debug.Log($"{entries[i].ClientId} / {entries[i].Name} / {entries[i].Score}");
         }
     }
 }
