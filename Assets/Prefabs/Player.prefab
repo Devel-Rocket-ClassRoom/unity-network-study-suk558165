@@ -129,6 +129,8 @@ GameObject:
   - component: {fileID: 6359010980310048740}
   - component: {fileID: -7569762607172323900}
   - component: {fileID: 6323668849266993563}
+  - component: {fileID: 4578597876244742747}
+  - component: {fileID: 9165348105836807050}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -351,3 +353,32 @@ MonoBehaviour:
   coinLayer:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &4578597876244742747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8604441763409838924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e29035c68f6528479603bb6fc6c247a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimation
+  ShowTopMostFoldoutHeaderGroup: 1
+--- !u!114 &9165348105836807050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8604441763409838924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad42df3abbf2832418c9159c55a52037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Physickicker
+  ShowTopMostFoldoutHeaderGroup: 1
+  m_KickRadius: 3
+  m_KickForce: 3
+  m_Upward: 0.4
